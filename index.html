@@ -29,8 +29,7 @@
   try {
     if (tg) {
       tg.ready();
-      tg.expand();                                   // full-height sheet (fixes "half screen")
-      if (tg.requestFullscreen) { try { tg.requestFullscreen(); } catch (e) {} }
+      tg.expand();                                   // full-HEIGHT sheet, but keeps the system status bar (battery/clock) visible
     }
   } catch (e) {}
   function p(n){ return new URLSearchParams(location.search).get(n); }
